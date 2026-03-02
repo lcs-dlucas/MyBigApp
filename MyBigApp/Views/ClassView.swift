@@ -17,15 +17,16 @@ struct ClassView :View{
 
             HStack{
                 VStack(alignment: .leading){
-                    Text("Gr11 Computer Science")
+                    Text("\(className)")
                     HStack{
-                        Text("Mr. Gordon")
+                        Text("\(teacherName)")
                         
                         Image(systemName: "star.fill")
                         Image(systemName: "star.fill")
                         Image(systemName: "star.fill")
                         Image(systemName: "star.fill")
                         Image(systemName: "star.fill")
+                        //Static for now
                         
                     }
                 }
