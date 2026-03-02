@@ -28,17 +28,21 @@ struct ClassesView: View {
                 ClassView(className: "Gr11 Pre-AP Functions", teacherName: "Mrs.Moore")
                 ClassView(className: "Gr11 Pre-AP Chemistry", teacherName: "Dr.Melville")
                 
+                
                 Spacer()
                 HStack{
+
                     Button{
                         //nothing
                     } label :{Image("house.circle").font(.title)}
                     Button{
                         //nothing
                     } label :{Image("magnifyingglass.circle").font(.title)}
-                }
+                } //why isnt this working
 
             }.navigationTitle("Browse Courses")
+
+
             
             
         }
