@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct ClassesView: View {
-    @State private var gradeSelection  = "11"
+    
+    @State var gradeSelection  = "11"
     var body: some View {
         NavigationStack{
             VStack{
@@ -20,33 +21,18 @@ struct ClassesView: View {
                     
                 }
                 .pickerStyle(.segmented)
-                HStack{
-                    VStack(alignment: .leading){
-                        Text("Gr11 Computer Science")
-                        HStack{
-                            Text("Mr. Gordon")
-                            Image(systemName: "star.fill")
-                            Image(systemName: "star.fill")
-                            Image(systemName: "star.fill")
-                            Image(systemName: "star.fill")
-                            Image(systemName: "star.fill")
-                        }
-                    }
-                    Spacer()
-                    Button{
-                        //hello
-                    } label: {
-                        Image(systemName: "plus")
-                    }
-                    
-                }.padding()
+                ClassView(className: "Gr11 Computer Science", teacherName: "Mr.Gordon")
                 Spacer()
-                
             }.navigationTitle("Browse Courses")
         }
+        
     }
 }
 
 #Preview {
     ClassesView()
+    
 }
+
+
+
