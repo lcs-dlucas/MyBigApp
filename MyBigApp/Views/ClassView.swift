@@ -14,7 +14,7 @@ struct ClassView :View{
 
     var body :some View{
 
-
+        VStack{
             HStack{
                 VStack(alignment: .leading){
                     Text("\(className)")
@@ -39,7 +39,10 @@ struct ClassView :View{
                     
                 }
                 
-            }.padding()
+            }.padding(8)
+            Text("---------------------------------------------------")
             
         }
+        }
+            
     }
