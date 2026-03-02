@@ -20,11 +20,30 @@ struct ClassesView: View {
                     
                 }
                 .pickerStyle(.segmented)
+                HStack{
+                    VStack(alignment: .leading){
+                        Text("Gr11 Computer Science")
+                        HStack{
+                            Text("Mr. Gordon")
+                            Image(systemName: "star.fill")
+                            Image(systemName: "star.fill")
+                            Image(systemName: "star.fill")
+                            Image(systemName: "star.fill")
+                            Image(systemName: "star.fill")
+                        }
+                    }
+                    Spacer()
+                    Button{
+                        //hello
+                    } label: {
+                        Image(systemName: "plus")
+                    }
                     
-            }
-        }.navigationTitle("Browse Courses")
-
-
+                }.padding()
+                Spacer()
+                
+            }.navigationTitle("Browse Courses")
+        }
     }
 }
 
