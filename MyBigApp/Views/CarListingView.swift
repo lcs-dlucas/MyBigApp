@@ -10,7 +10,7 @@ import SwiftUI
 struct CarListingView: View {
     var body: some View {
         NavigationStack{
-            ZStack{
+
                 ScrollView{
                     VStack(alignment: .leading){
                         ZStack{
@@ -36,15 +36,23 @@ struct CarListingView: View {
                         
                         Spacer()
                     }
-                    TabView{
-                        Tab("Listings", systemImage: "book.fill"){
-                            Text("listings")
-                        }
+
                     }
+            Spacer()
+            TabView{
+                Tab("Listings", systemImage: "book.fill"){
+                    //
+                }
+                Tab("Saved", systemImage: "heart.fill"){
+                    //
+                }
+                Tab("Listings", systemImage: "person.fill"){
+                    //
                 }
                 
+                
 
-            }
+            }.containerRelativeFrame(.vertical, count: 16, spacing: 0)
             
         }
         .toolbar{
