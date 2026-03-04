@@ -40,7 +40,18 @@ struct CarListingView: View {
                     Spacer()
                 }
                 
-            }.padding()
+            }.padding().toolbar{
+                ToolbarItem(placement: .topBarLeading){
+                    Button{
+                        //nothing
+                    }
+                    label : {
+                        Image(systemName: "chevron.backward")
+                    }
+                    
+                }
+                
+            }
             Spacer()
             TabView{
                 Tab("Listings", systemImage: "book.fill"){
@@ -58,18 +69,7 @@ struct CarListingView: View {
             }.containerRelativeFrame(.vertical, count: 16, spacing: 0)
             
         }
-        .toolbar{
-            ToolbarItem(placement: .topBarLeading){
-                Button{
-                    //nothing
-                }
-                label : {
-                    Image(systemName: "chevron.backwards")
-                }
-                
-            }
-            
-        }
+
     }
 }
 
