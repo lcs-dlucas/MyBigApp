@@ -12,6 +12,7 @@
 		174FF8832F56172300C06FA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 174FF87D2F56172300C06FA7 /* Assets.xcassets */; };
 		174FF8862F56257E00C06FA7 /* ClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174FF8852F56257E00C06FA7 /* ClassView.swift */; };
 		179E36692F586F7C002FB267 /* CarListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E36682F586F7B002FB267 /* CarListingView.swift */; };
+		179E366B2F587481002FB267 /* SpecificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E366A2F587481002FB267 /* SpecificationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		174FF87F2F56172300C06FA7 /* MyBigAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBigAppApp.swift; sourceTree = "<group>"; };
 		174FF8852F56257E00C06FA7 /* ClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassView.swift; sourceTree = "<group>"; };
 		179E36682F586F7B002FB267 /* CarListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListingView.swift; sourceTree = "<group>"; };
+		179E366A2F587481002FB267 /* SpecificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				174FF87E2F56172300C06FA7 /* ClassesView.swift */,
 				174FF8852F56257E00C06FA7 /* ClassView.swift */,
 				179E36682F586F7B002FB267 /* CarListingView.swift */,
+				179E366A2F587481002FB267 /* SpecificationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				174FF8812F56172300C06FA7 /* ClassesView.swift in Sources */,
+				179E366B2F587481002FB267 /* SpecificationView.swift in Sources */,
 				174FF8822F56172300C06FA7 /* MyBigAppApp.swift in Sources */,
 				179E36692F586F7C002FB267 /* CarListingView.swift in Sources */,
 				174FF8862F56257E00C06FA7 /* ClassView.swift in Sources */,

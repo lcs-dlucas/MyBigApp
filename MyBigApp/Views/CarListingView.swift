@@ -10,21 +10,47 @@ import SwiftUI
 struct CarListingView: View {
     var body: some View {
         NavigationStack{
-            VStack(alignment: .leading){
-                ZStack{
-                    RoundedRectangle(cornerRadius: 20).fill(Color.cyan)
-                    Image(systemName: "car.fill").foregroundColor(Color.blue)
-                }.containerRelativeFrame(.vertical, count: 4, spacing:0).padding(.vertical)
+            ZStack{
+                ScrollView{
+                    VStack(alignment: .leading){
+                        ZStack{
+                            RoundedRectangle(cornerRadius: 20).fill(Color.cyan)
+                            Image(systemName: "car.fill").foregroundColor(Color.blue)
+                        }.containerRelativeFrame(.vertical, count: 4, spacing:0).padding(.vertical)
+                        Text("2022 Tesla Model X")
+                        Text("$95,000,00")
+                        Text("Specifications")
+                        SpecificationView(category: "Year", value: "2022")
+                        SpecificationView(category: "Make", value: "Tesla")
+                        SpecificationView(category: "Model", value: "Model X")
+                        SpecificationView(category: "Colour", value: "Silver")
+                        SpecificationView(category: "Drivetrain", value: "All-wheel drive")
+                        SpecificationView(category: "Listed On", value: "May 22, 2024")
+                        Text("Description")
+                        Text("BlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahbl")
+                        
+                        
+                        
+                        
+                        
+                        
+                        Spacer()
+                    }
+                    TabView{
+                        Tab("Listings", systemImage: "book.fill"){
+                            Text("listings")
+                        }
+                    }
+                }
                 
-                
-                Spacer()
+
             }
             
         }
         .toolbar{
             ToolbarItem(placement: .topBarLeading){
                 Button{
-                    
+                    //nothing
                 }
                 label : {
                     Image(systemName: "chevron.backwards")
@@ -39,3 +65,5 @@ struct CarListingView: View {
 #Preview {
     CarListingView()
 }
+
+
