@@ -17,7 +17,7 @@ struct CarListingView: View {
                     ZStack{
                         RoundedRectangle(cornerRadius: 20).fill(Color.cyan)
                         Image(systemName: "car.fill").resizable().scaledToFit().frame(width: 100).foregroundColor(Color.blue
-                        ).padding(30)}
+                        ).padding(50)}
                     Text("2022 Tesla Model X").font(.title).bold()
                     Text("$95,000,00").foregroundColor(Color.blue).font(.title2).bold()
                     Text("-----------------------------------------------")
@@ -54,13 +54,13 @@ struct CarListingView: View {
             }
             Spacer()
             TabView{
-                Tab("Listings", systemImage: "book.fill"){
+                Tab("Listings", systemImage: "list.clipboard"){
                     //
                 }
                 Tab("Saved", systemImage: "heart.fill"){
                     //
                 }
-                Tab("Listings", systemImage: "person.fill"){
+                Tab("My profile", systemImage: "person.fill"){
                     //
                 }
                 
