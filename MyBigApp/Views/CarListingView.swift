@@ -10,13 +10,14 @@ import SwiftUI
 struct CarListingView: View {
     var body: some View {
         NavigationStack{
-            
+
             ScrollView{
+
                 VStack(alignment: .leading){
                     ZStack{
                         RoundedRectangle(cornerRadius: 20).fill(Color.cyan)
-                        Image(systemName: "car.fill").foregroundColor(Color.blue).font(.largeTitle)
-                    }.containerRelativeFrame(.vertical, count: 4, spacing:0).padding(.vertical)
+                        Image(systemName: "car.fill").resizable().scaledToFit().frame(width: 100).foregroundColor(Color.blue
+                        ).padding(30)}
                     Text("2022 Tesla Model X").font(.title).bold()
                     Text("$95,000,00").foregroundColor(Color.blue).font(.title2).bold()
                     Text("-----------------------------------------------")
