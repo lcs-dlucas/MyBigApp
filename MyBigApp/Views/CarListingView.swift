@@ -10,34 +10,36 @@ import SwiftUI
 struct CarListingView: View {
     var body: some View {
         NavigationStack{
-
-                ScrollView{
-                    VStack(alignment: .leading){
-                        ZStack{
-                            RoundedRectangle(cornerRadius: 20).fill(Color.cyan)
-                            Image(systemName: "car.fill").foregroundColor(Color.blue)
-                        }.containerRelativeFrame(.vertical, count: 4, spacing:0).padding(.vertical)
-                        Text("2022 Tesla Model X")
-                        Text("$95,000,00")
-                        Text("Specifications")
-                        SpecificationView(category: "Year", value: "2022")
-                        SpecificationView(category: "Make", value: "Tesla")
-                        SpecificationView(category: "Model", value: "Model X")
-                        SpecificationView(category: "Colour", value: "Silver")
-                        SpecificationView(category: "Drivetrain", value: "All-wheel drive")
-                        SpecificationView(category: "Listed On", value: "May 22, 2024")
-                        Text("Description")
-                        Text("BlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahbl")
-                        
-                        
-                        
-                        
-                        
-                        
-                        Spacer()
-                    }
-
-                    }
+            
+            ScrollView{
+                VStack(alignment: .leading){
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 20).fill(Color.cyan)
+                        Image(systemName: "car.fill").foregroundColor(Color.blue).font(.largeTitle)
+                    }.containerRelativeFrame(.vertical, count: 4, spacing:0).padding(.vertical)
+                    Text("2022 Tesla Model X").font(.title).bold()
+                    Text("$95,000,00").foregroundColor(Color.blue).font(.title2).bold()
+                    Text("-----------------------------------------------")
+                    Text("Specifications").bold()
+                    SpecificationView(category: "Year", value: "2022")
+                    SpecificationView(category: "Make", value: "Tesla")
+                    SpecificationView(category: "Model", value: "Model X")
+                    SpecificationView(category: "Colour", value: "Silver")
+                    SpecificationView(category: "Drivetrain", value: "All-wheel drive")
+                    SpecificationView(category: "Listed On", value: "May 22, 2024")
+                    Text("-----------------------------------------------")
+                    Text("Description").bold()
+                    Text("BlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahblahblahblahBlahbl")
+                    
+                    
+                    
+                    
+                    
+                    
+                    Spacer()
+                }
+                
+            }.padding()
             Spacer()
             TabView{
                 Tab("Listings", systemImage: "book.fill"){
@@ -51,7 +53,7 @@ struct CarListingView: View {
                 }
                 
                 
-
+                
             }.containerRelativeFrame(.vertical, count: 16, spacing: 0)
             
         }

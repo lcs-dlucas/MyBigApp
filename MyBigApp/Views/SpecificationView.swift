@@ -14,7 +14,8 @@ struct SpecificationView: View {
     var body: some View {
         HStack{
             Text("\(category)")
-            Text("\(value)")
+
+            Text("\(value)").bold()
         }
     }
 }
